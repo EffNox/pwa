@@ -37,7 +37,10 @@ self.addEventListener('install', e => {
 });
 
 self.addEventListener('activate', e => {
-    const rpt = caches.keys().then(keys => keys.forEach(k => (k != STATIC && k.includes('static')) ? caches.delete(k) : null));
+    const rpt = caches.keys().then(keys => keys.forEach(k => {
+        if ((k != STATIC && k.includes('static'))) return caches.delete(k);
+        if ((k != STATIC && k.includes('dynamic'))) return caches.delete(k);
+    }));
     e.waitUntil(rpt);
 });
 
