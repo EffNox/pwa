@@ -1,6 +1,6 @@
 // imports
 importScripts('js/sw-utils.js');
-const STATIC = 'static-v2';
+const STATIC = 'static-v3';
 const DYNAMIC = 'dynamic-v1';
 const INMUTABLE = 'inmutable-v1';
 const APP_SHEEL = [
