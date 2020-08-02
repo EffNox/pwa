@@ -4,7 +4,7 @@ const STATIC = 'static-v2';
 const DYNAMIC = 'dynamic-v1';
 const INMUTABLE = 'inmutable-v1';
 const APP_SHEEL = [
-    '/',
+    // '/',
     'index.html',
     'css/style.css',
     'img/favicon.ico',
